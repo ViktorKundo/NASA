@@ -1,16 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>NASA - Your Picture</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='main.js'></script>
+    <meta charset = "UTF-8">
+    <title>NASA - POTD</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+    <link rel = "stylesheet" href = "style.css" />
+    <link rel = "icon" href="Images/nasa.png">
 </head>
 <body>
-    <header>
-        NASA - PICTURE OF THE DAY
-    </header>
+    <div class="nav">
+        <h1>NASA PICTURE OF THE DAY</h1>
+    </div>
+
+    <div class = "date" id = "date">
+        <div class = "select">
+
+            <p>Day:</p> 
+            <select id = "day"></select>
+            
+            <p>Month:</p> 
+            <select id = "month"></select>
+
+            <p>Year:</p> 
+            <select id = "year"></select>
+        </div>
+
+        <div class="buttons">
+            <img src = "Images/today.png" id = "today" alt="today">
+            <img src = "Images/change.png" id = "change">
+        </div>
+    </div>
+    <div class="img-container">
+        <img src="Images/nasa.png" alt="Image" id="img">
+    </div>
+    <button id="toggle">
+          <p class="choose">DATE</p>
+    </button>
+	<video autoplay muted loop id="background">
+        <source src="Background/background.mp4" type="video/mp4"> 
+    </video> 
+    <script src='script.js'>
+        
+    </script>
 </body>
 </html>
